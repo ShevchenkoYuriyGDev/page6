@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №6</title>
+  <div id="userContainer" class="user-container"></div>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  min-height: 100vh; 
+  background: linear-gradient(135deg, #616161, #4c4e4e, #191a1b);
+  margin: 0; 
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #000000, #000000);
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #9aff8d, #9aff8d);
+  transform: scale(1.05);
+}
+
+.user-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #ffffff, #ffe659);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 3px solid #64b5f6;
+  transition: border-color 0.5s ease;
+}
+
+.user-card img:hover {
+  border-color: #1976d2;
+}
+
+.user-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #1e88e5;
+}
+
+.user-card p {
+  font-size: 14px;
+  color: #666;
+}
+  </style>
+  </style>
+</head>
+<body>
+  <button id="fetchData">Отримати дані</button>
+  <div id="userContainer"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
